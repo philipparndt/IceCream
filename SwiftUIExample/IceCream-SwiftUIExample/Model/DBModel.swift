@@ -14,8 +14,8 @@ class DBModel {
     // All Realm Object to syncronize vie ClokdKit / IceCream
     public static var syncEngine: SyncEngine {
         SyncEngine(objects: [
-            SyncObject<Person>(),
-            SyncObject<Cat>()
+            SyncObject(type: Person.self),
+            SyncObject(type: Cat.self)
         ])
     }
     
