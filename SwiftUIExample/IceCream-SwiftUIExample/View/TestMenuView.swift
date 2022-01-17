@@ -58,7 +58,7 @@ struct TestMenuView: View {
                         self.app.syncEngine?.pull()
                     }
                     ButtonView(text: "Push All", imageSystemName:"arrow.up") {
-                        self.app.syncEngine?.pull()
+                        self.app.syncEngine?.pushAll()
                     }
 
                 }
